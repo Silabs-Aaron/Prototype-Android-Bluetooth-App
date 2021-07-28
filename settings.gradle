@@ -1,0 +1,2 @@
+rootProject.name = "Prototype Bluetooth App"
+include ':app'

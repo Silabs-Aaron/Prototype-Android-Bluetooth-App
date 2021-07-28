@@ -25,6 +25,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.prototypebluetoothapp.databinding.ActivityMainBinding
+import com.example.prototypebluetoothapp.databinding.RecyclerviewDeviceBinding.inflate
 import java.util.jar.Manifest
 
 class MainActivity : AppCompatActivity() {
@@ -118,8 +119,8 @@ class MainActivity : AppCompatActivity() {
 
         manager = LinearLayoutManager(this)
 
-        binding.recyclerView.apply{
-            adapter = RecyclerViewAdapter(data)
+        binding.RecyclerView.apply{
+            Adpater = RecyclerViewAdapter(data)
             layoutManager = manager
 
         }
